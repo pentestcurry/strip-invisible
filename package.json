@@ -8,7 +8,7 @@
     ".": "./index.mjs"
   },
   "bin": {
-    "strip-invisible": "./cli.mjs"
+    "strip-invisible": "cli.mjs"
   },
   "files": [
     "index.mjs",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pentestcurry/strip-invisible.git"
+    "url": "git+https://github.com/pentestcurry/strip-invisible.git"
   },
   "homepage": "https://github.com/pentestcurry/strip-invisible#readme",
   "bugs": {
