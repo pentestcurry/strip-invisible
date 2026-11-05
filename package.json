@@ -1,0 +1,44 @@
+{
+  "name": "strip-invisible",
+  "version": "0.1.0",
+  "description": "Find and remove invisible Unicode, zero-width characters, and syntax-breaking typography from text, code, and data files.",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "bin": {
+    "strip-invisible": "./cli.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "cli.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "keywords": [
+    "unicode",
+    "invisible-characters",
+    "zero-width",
+    "bidi",
+    "trojan-source",
+    "smart-quotes",
+    "text-cleaner",
+    "cli"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pentestcurry/strip-invisible.git"
+  },
+  "homepage": "https://github.com/pentestcurry/strip-invisible#readme",
+  "bugs": {
+    "url": "https://github.com/pentestcurry/strip-invisible/issues"
+  }
+}

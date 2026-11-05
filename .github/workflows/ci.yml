@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Syntax check
+        run: node --check index.mjs && node --check cli.mjs
+      - name: Unit tests
+        run: node test.mjs
+      - name: CLI smoke test
+        run: |
+          printf 'plain ascii\n' | node cli.mjs
+          printf 'plain ascii\n' | node cli.mjs --check

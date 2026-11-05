@@ -1,0 +1,46 @@
+{
+  "name": "strip-invisible-vscode",
+  "displayName": "Strip Invisible Characters",
+  "description": "Highlight and remove invisible Unicode, zero-width characters, and Trojan Source bidi controls in the editor.",
+  "version": "0.1.0",
+  "publisher": "rephrasr",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "keywords": [
+    "unicode",
+    "invisible-characters",
+    "zero-width",
+    "bidi",
+    "trojan-source"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:stripInvisible.clean",
+    "onCommand:stripInvisible.scan"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stripInvisible.clean",
+        "title": "Strip Invisible: Clean Document"
+      },
+      {
+        "command": "stripInvisible.scan",
+        "title": "Strip Invisible: Show Findings"
+      }
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pentestcurry/strip-invisible.git",
+    "directory": "vscode"
+  },
+  "homepage": "https://github.com/pentestcurry/strip-invisible#readme"
+}
