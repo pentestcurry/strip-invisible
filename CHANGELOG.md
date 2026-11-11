@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here.
 
+## 0.1.1
+
+- Point the package homepage at the web version of the tool.
+
 ## 0.1.0
 
 - Initial release.

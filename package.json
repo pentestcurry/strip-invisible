@@ -1,6 +1,6 @@
 {
   "name": "strip-invisible",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Find and remove invisible Unicode, zero-width characters, and syntax-breaking typography from text, code, and data files.",
   "type": "module",
   "main": "./index.mjs",
@@ -37,7 +37,7 @@
     "type": "git",
     "url": "git+https://github.com/pentestcurry/strip-invisible.git"
   },
-  "homepage": "https://github.com/pentestcurry/strip-invisible#readme",
+  "homepage": "https://aiwatermarkremovers.com/text-integrity-checker",
   "bugs": {
     "url": "https://github.com/pentestcurry/strip-invisible/issues"
   }
